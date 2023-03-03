@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    text-decoration:none;
+}
+
+button{
+    cursor:pointer;
+}
+
+:root{
+    --bg1:#4CDA82;
+    --bg2:#F5F9F7;
+    --bg3:#161D19;
+    --color1:#1687bb;
+}
+
+body{
+    background:var(--bg1);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height:100vh;
+    position:relative;
+    transition:.5s ease-in;
+    height:100vh;
+    width:100vw;
+}
+
+.app{
+    width:80%;
+    height:80%;
+    position:absolute;
+    background:var(--bg2);
+    border-radius:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+/********************Header*************************/
+.Header{
+    width:100%;
+    height:4rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:1.6rem;
+    font-size:1.5rem
+}
+/********************JokesBox*************************/
+.JokesBox{
+    border:2px solid var(--bg1);
+    width:80%;
+    height:60%;
+    border-radius:10px;
+}
+
+.JokesBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.JokesBox p{
+    font-size:1.2rem;
+}
+/********************Navigation*************************/
+
+.Navigation{
+    width:80%;
+    height:5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navigation button{
+    border:none;
+    font-size:1.8rem;
+    width:3rem;
+    height:3rem;
+    background:none;
+    transition:.2s;
+    border-radius:50%;
+}
+
+.Navigation button:hover{
+  
+    background:var(--bg1);
+}
+/********************Control-Footer*************************/
+.Control-Footer{
+    position:fixed;
+    width:5rem;
+    height:5rem;
+    border-radius:50%;
+    background:var(--color1);
+    right:1rem;
+    bottom:2rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+}
+.Control-Footer button{
+    border:none;
+    background:none;
+    font-size:2rem;
+    color:#fff;
+    height:100%;
+    width:100%;
+}
+/********************Footer*************************/
+.Footer{
+    background:var(--bg3);
+    width:100%;
+    height:3.5rem;
+    position:absolute;
+    bottom:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.Footer a{
+    color:var(--bg1);
+}
+
+
+
